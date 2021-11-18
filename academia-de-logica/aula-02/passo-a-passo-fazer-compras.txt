@@ -1,0 +1,14 @@
+1 - Levantar da cadeira
+2 - Pegar a cadeira
+3 - Abrir a porta
+4 - Fechar a porta
+5 - Sair de casa
+6 - Andar até a feira
+7 - Escolher frutas
+8 - Escolher verduras
+9 - Pagar com dinheiro
+10 - Andar até a casa
+11 - Abrir a porta de casa
+12 - Entrar
+13 - Lavar
+14 - Guardar na geladeira
