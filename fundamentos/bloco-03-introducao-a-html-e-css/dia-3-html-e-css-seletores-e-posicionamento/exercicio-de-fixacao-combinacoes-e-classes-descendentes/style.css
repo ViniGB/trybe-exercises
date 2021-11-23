@@ -26,3 +26,15 @@ li {
 li em {
     font-weight: bold;
 }
+
+li:hover {
+    padding: 1px;
+}
+
+div.fonteazul li:nth-child(-n + 3) {
+    color: blue;
+}
+
+div.fonteazul li.java {
+    background-color: pink;
+}
