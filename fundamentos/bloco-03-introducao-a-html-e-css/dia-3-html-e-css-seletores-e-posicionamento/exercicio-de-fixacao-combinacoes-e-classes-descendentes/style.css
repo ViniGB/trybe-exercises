@@ -1,0 +1,11 @@
+.fundoamarelo {
+    background-color: yellow;
+}
+
+.par:nth-last-of-type(even) {
+    color: green;
+}
+
+.impar:nth-last-of-type(odd) {
+    text-transform: uppercase;
+}
