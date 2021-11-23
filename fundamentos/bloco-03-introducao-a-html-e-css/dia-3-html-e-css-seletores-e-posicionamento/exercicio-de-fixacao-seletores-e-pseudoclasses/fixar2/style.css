@@ -14,6 +14,7 @@ div:nth-of-type(2){
 
 div:nth-of-type(3){
     color: blue;
+    font-size: 25px;
 }
 
 div:nth-of-type(4){
