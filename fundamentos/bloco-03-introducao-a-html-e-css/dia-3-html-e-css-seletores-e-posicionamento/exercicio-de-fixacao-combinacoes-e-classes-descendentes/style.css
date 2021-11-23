@@ -38,3 +38,23 @@ div.fonteazul li:nth-child(-n + 3) {
 div.fonteazul li.java {
     background-color: pink;
 }
+
+div.hover .laranja:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+div.hover .verde:hover {
+    color: green;
+    font-weight: bold;
+}
+
+div.hover .preta:hover {
+    color: black;
+    font-weight: bold;
+}
+
+div.hover .amarela:hover {
+    color: yellow;
+    font-weight: bold;
+}
