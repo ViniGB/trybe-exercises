@@ -9,3 +9,12 @@
 .impar:nth-last-of-type(odd) {
     text-transform: uppercase;
 }
+
+.header {
+    color: red;
+}
+
+.italico {
+    font-size: 40px;
+    border: 1px solid black;
+}
