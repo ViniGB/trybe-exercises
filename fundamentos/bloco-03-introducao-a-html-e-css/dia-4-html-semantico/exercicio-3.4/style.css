@@ -1,4 +1,5 @@
 * {
+    font-family: monospace;
     margin: 0;
 }
 
@@ -51,7 +52,7 @@ h1:hover {
 main {
     max-width: 1500px;
     margin:auto;
-    padding: 30px 100px;
+    padding: 50px 100px;
 }
 
 h2, h3 {
@@ -65,7 +66,9 @@ h2, h3 {
 }
 
 .conteudoprincipal {
+    padding: 0 20px 20px 20px;
     display: inline-block;
+    width: 66%;
 }
 
 .stomatopoda1 {
@@ -75,6 +78,7 @@ h2, h3 {
 
 .lateraldireita {
     display: inline-block;
+    float: right;
 }
 
 .informacoesgerais td {
@@ -90,5 +94,35 @@ h2, h3 {
 .table2 {
     margin: auto;
     text-align: center;
-    
+}
+
+.artigosmenores {
+    display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+    padding: 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.artigoprincipal {
+    padding: 30px;
+    padding-left: 0;
+    transition: 0.5s;
+}
+
+.artigosmenores:hover {
+    padding: 10px;
+    padding-top: 0;
+    box-shadow: 0 0 4px;
+    border: 1px solid rgb(243, 138, 138);
+    border-radius: 20%;
+}
+
+.artigoprincipal:hover {
+    padding: 50px;
+    padding-top: 40px;
+    box-shadow: 0 0 4px;
+    border: 1px solid rgb(243, 138, 138);
+    border-radius: 10%;
 }
