@@ -1,10 +1,8 @@
 * {
     margin: 0;
-    box-sizing: border-box;
 }
 
 h1 {
-    text-align: justify;
     color: white;
     border: 10px solid rgb(24, 21, 21);
     border-left: 0;
@@ -12,6 +10,7 @@ h1 {
     padding: 16px;
     margin: 0;
     transition: color 2s;
+    text-align: center;
 }
 
 h1:hover {
@@ -25,7 +24,7 @@ h1:hover {
 }
 
 ;.navegacao ul {
-    padding: 5px 0;
+    margin-right: 0;
 }
 
 .navegacao li {
@@ -47,4 +46,49 @@ h1:hover {
     background-color:rgb(173, 204, 172);
     box-shadow: 0px 0px 4px;
     margin-left: 10px;
+}
+
+main {
+    max-width: 1500px;
+    margin:auto;
+    padding: 30px 100px;
+}
+
+h2, h3 {
+    margin: 10px 0 10px;
+}
+
+.informacoesgerais {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 1px solid rgb(95, 91, 91);
+}
+
+.conteudoprincipal {
+    display: inline-block;
+}
+
+.stomatopoda1 {
+    padding: 10px 30px;
+    border-radius: 100%;
+}
+
+.lateraldireita {
+    display: inline-block;
+}
+
+.informacoesgerais td {
+    text-align: left;
+    max-width: 10%;
+    background-color: rgb(173, 204, 172);
+}
+
+.informacoesgerais th {
+    background-color: rgb(173, 204, 172);
+}
+
+.table2 {
+    margin: auto;
+    text-align: center;
+    
 }
