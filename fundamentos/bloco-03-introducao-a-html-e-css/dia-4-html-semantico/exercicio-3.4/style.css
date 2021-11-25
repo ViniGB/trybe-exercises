@@ -52,7 +52,7 @@ h1:hover {
 main {
     max-width: 1500px;
     margin:auto;
-    padding: 50px 100px;
+    padding: 50px 100px 0;
 }
 
 h2, h3 {
@@ -152,4 +152,14 @@ h2, h3 {
     box-shadow: 0 0 4px;
     padding: 35px;
     color: black
+}
+
+.rodape {
+    margin-top: 100px;
+    background-color: rgb(24, 21, 21);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
 }
