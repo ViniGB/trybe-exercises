@@ -131,3 +131,25 @@ h2, h3 {
     border: 1px solid rgb(243, 138, 138);
     border-radius: 10%;
 }
+
+.video {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: none;
+}
+
+.video a {
+    text-decoration: none;
+    padding: 30px;
+    background-color: rgb(173, 204, 172);
+    border-radius: 20% 0;
+    color: white;
+    transition: color 1s;
+}
+
+.video a:hover {
+    box-shadow: 0 0 4px;
+    padding: 35px;
+    color: black
+}
