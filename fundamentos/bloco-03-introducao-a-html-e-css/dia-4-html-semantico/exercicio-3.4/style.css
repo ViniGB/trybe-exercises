@@ -1,0 +1,165 @@
+* {
+    font-family: monospace;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    border: 10px solid rgb(24, 21, 21);
+    border-left: 0;
+    background-color: rgb(24, 21, 21);
+    padding: 16px;
+    margin: 0;
+    transition: color 2s;
+    text-align: center;
+}
+
+h1:hover {
+    color: teal;
+}
+
+.navegacao {
+    background-color: rgb(125, 165, 124);
+    padding: 5px 0;
+    margin-top: 0;
+}
+
+;.navegacao ul {
+    margin-right: 0;
+}
+
+.navegacao li {
+    padding: 10px;
+    display: inline;
+    width: 100%;
+    margin: 0;
+    transition: 1s;
+}
+
+.navegacao li a {
+    text-decoration: none;
+    color:white;
+}
+
+.navegacao li:hover {
+    border: 30px;
+    border-radius: 10px;
+    background-color:rgb(173, 204, 172);
+    box-shadow: 0px 0px 4px;
+    margin-left: 10px;
+}
+
+main {
+    max-width: 1500px;
+    margin:auto;
+    padding: 50px 100px 0;
+}
+
+h2, h3 {
+    margin: 10px 0 10px;
+}
+
+.informacoesgerais {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 1px solid rgb(95, 91, 91);
+}
+
+.conteudoprincipal {
+    padding: 0 20px 20px 20px;
+    display: inline-block;
+    width: 66%;
+}
+
+.stomatopoda1 {
+    padding: 10px 30px;
+    border-radius: 100%;
+}
+
+.lateraldireita {
+    display: inline-block;
+    float: right;
+}
+
+.informacoesgerais td {
+    text-align: left;
+    max-width: 10%;
+    background-color: rgb(173, 204, 172);
+}
+
+.informacoesgerais th {
+    background-color: rgb(173, 204, 172);
+}
+
+.table2 {
+    margin: auto;
+    text-align: center;
+}
+
+.artigosmenores {
+    display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+    padding: 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.artigosmenores img {
+    border-radius: 100%;
+    padding-top: 10px;
+}
+
+.artigoprincipal {
+    padding: 30px;
+    padding-left: 0;
+    transition: 0.5s;
+}
+
+.artigosmenores:hover {
+    padding: 10px;
+    padding-top: 0;
+    box-shadow: 0 0 4px;
+    border: 1px solid rgb(243, 138, 138);
+    border-radius: 20%;
+}
+
+.artigoprincipal:hover {
+    padding: 50px;
+    padding-top: 40px;
+    box-shadow: 0 0 4px;
+    border: 1px solid rgb(243, 138, 138);
+    border-radius: 10%;
+}
+
+.video {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: none;
+}
+
+.video a {
+    text-decoration: none;
+    padding: 30px;
+    background-color: rgb(173, 204, 172);
+    border-radius: 20% 0;
+    color: white;
+    transition: color 1s;
+}
+
+.video a:hover {
+    box-shadow: 0 0 4px;
+    padding: 35px;
+    color: black
+}
+
+.rodape {
+    margin-top: 100px;
+    background-color: rgb(24, 21, 21);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
