@@ -3,7 +3,9 @@
 const n = 5;
 let jumpLine = '';
 
-for (let i = 0; i < n; i += 1) {
-  jumpLine += '*';
-  console.log(jumpLine);
+if (n > 0) {
+  for (let i = 1; i <= n; i += 1) {
+    jumpLine += '*';
+    console.log(jumpLine);
+  }
 }
