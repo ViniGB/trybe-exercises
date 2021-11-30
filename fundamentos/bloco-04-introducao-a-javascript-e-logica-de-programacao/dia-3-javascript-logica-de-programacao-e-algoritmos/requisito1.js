@@ -5,7 +5,7 @@ let jumpLine = '';
 
 if (n > 1) {
   for (let i = 0; i < n; i += 1) {
-    jumpLine = ' ';
+    jumpLine = '';
     for (let j = 0; j < n; j += 1) {
       jumpLine += '*';
     }
