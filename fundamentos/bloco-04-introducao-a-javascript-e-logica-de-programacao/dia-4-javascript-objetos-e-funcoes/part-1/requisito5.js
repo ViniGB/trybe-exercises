@@ -15,7 +15,7 @@ let info2 = {
 };
 
 for (let key in info) {
-  if (key === 'recorrente' && info[key] === info2[key]) {
+  if (key === 'recorrente' && info[key] === 'Sim' && info2[key] === 'Sim') { // linha modificada com o insigth do Pondaco
     console.log('Ambos recorrentes');
   } else {
   console.log(`${info[key]} e ${info2[key]}`);
