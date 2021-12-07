@@ -87,15 +87,15 @@
       addChildToTagMain('section', 'center-content');
 
       // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
-      function addChildToFirstSectionOfMain (elementOfChild, textIfNeeded) {
+      function addChildToSectionCenterContent (elementOfChild, textIfNeeded) {
 
-        const fatherFirstSection = document.querySelector('.center-content');
-        const childOfSection = document.createElement(elementOfChild);
+        const fatherSectionCenterContent = document.querySelector('.center-content');
+        const childOfSectionCenterContent = document.createElement(elementOfChild);
 
-        childOfSection.innerText = textIfNeeded;
-        return fatherFirstSection.appendChild(childOfSection);
+        childOfSectionCenterContent.innerText = textIfNeeded;
+        return fatherSectionCenterContent.appendChild(childOfSectionCenterContent);
       }
-      addChildToFirstSectionOfMain('p', 'Texto para a tag P');
+      addChildToSectionCenterContent('p', 'Texto para a tag P');
 
       // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
       addChildToTagMain('section', 'left-content');
@@ -115,6 +115,33 @@
         return fatherSectionLeftContent;
       }
       addChildToSectionLeftContent('img', 'small-image', 'https://picsum.photos/200');
+
+      // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      function addChildToSectionRightContent (elementOfChild) {
+
+        const fatherSectionRightContent = document.querySelector('.right-content');
+        const childOfSectionRightContent = document.createElement(elementOfChild);
+
+        fatherSectionRightContent.appendChild(childOfSectionRightContent);
+        return fatherSectionRightContent;
+      }
+      addChildToSectionRightContent('ul');
+
+      function addChildToUlOfRightContent (elementOfChild, arrayToLi) {
+
+        const fatherUlOfRightContent = document.querySelector('.right-content').firstChild;
+
+        for (let i = 0; i < arrayToLi.length; i += 1) {
+          let childOfUl = arrayToLi[i];
+
+          let childOfUlList = document.createElement(elementOfChild);
+          childOfUlList.innerText = childOfUl;
+
+          fatherUlOfRightContent.appendChild(childOfUlList);
+        }
+        return fatherUlOfRightContent;
+      }
+      addChildToUlOfRightContent('li', ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']);
 
     </script>
   </body>
