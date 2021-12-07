@@ -100,6 +100,22 @@
       // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
       addChildToTagMain('section', 'left-content');
 
+      // 6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+      addChildToTagMain('section', 'right-content');
+
+      // 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+      function addChildToSectionLeftContent (elementOfChild, classNameIfNeeded, srcLinkIfNeeded) {
+
+        const fatherSectionLeftContent = document.querySelector('.left-content');
+        const childOfSectionLeftContent = document.createElement(elementOfChild);
+
+        childOfSectionLeftContent.className = classNameIfNeeded;
+        childOfSectionLeftContent.src = srcLinkIfNeeded;
+        fatherSectionLeftContent.appendChild(childOfSectionLeftContent);
+        return fatherSectionLeftContent;
+      }
+      addChildToSectionLeftContent('img', 'small-image', 'https://picsum.photos/200');
+
     </script>
   </body>
 </html>
