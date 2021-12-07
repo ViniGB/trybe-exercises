@@ -76,11 +76,15 @@
       fatherOfAll.appendChild(childMain);
 
       // 3. Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
-      const fatherMain = document.querySelector('.main-content');
-      const childOfMain = document.createElement('section');
+      function addChildToTagMain (elementOfChild, classNameIfNeeded) {
 
-      childOfMain.className = 'center-content';
-      fatherMain.appendChild(childOfMain);
+        const fatherMain = document.querySelector('.main-content');
+        const childOfMain = document.createElement(elementOfChild);
+
+        childOfMain.className = classNameIfNeeded;
+        fatherMain.appendChild(childOfMain);
+      }
+      addChildToTagMain('section', 'center-content');
 
       // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
       function addChildToFirstSectionOfMain (elementOfChild, textIfNeeded) {
@@ -92,6 +96,9 @@
         return fatherFirstSection.appendChild(childOfSection);
       }
       addChildToFirstSectionOfMain('p', 'Texto para a tag P');
+
+      // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+      addChildToTagMain('section', 'left-content');
 
     </script>
   </body>
