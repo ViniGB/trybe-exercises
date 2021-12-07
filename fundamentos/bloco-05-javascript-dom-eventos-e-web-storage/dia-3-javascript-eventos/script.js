@@ -44,3 +44,22 @@ function addChildToUlDays () {
   return fatherUlDays;
 }
 addChildToUlDays();
+
+// Exercício 2:
+// Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+// Adicione a este botão a ID "btn-holiday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+
+function createButtonToButtonsContainer () {
+
+  const fatherOfButton = document.querySelector('.buttons-container');
+  const buttonChild = document.createElement('button');
+  buttonChild.type = 'button';
+  buttonChild.id = 'btn-holiday';
+  buttonChild.textContent = 'Feriados';
+
+  fatherOfButton.appendChild(buttonChild);
+  
+  return fatherOfButton;
+}
+createButtonToButtonsContainer();
