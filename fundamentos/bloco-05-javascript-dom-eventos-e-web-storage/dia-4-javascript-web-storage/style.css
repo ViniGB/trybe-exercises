@@ -1,0 +1,24 @@
+.header h1 {
+  font-size: 100px;
+  text-align: center;
+  font-family: Corinthia;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.main {
+  text-align: center;
+}
+
+#paragraph {
+  width: 1000px;
+  margin: auto;
+}
+
+aside {
+  width: 300px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
