@@ -5,6 +5,7 @@
   border-bottom: 1px solid black;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  margin-bottom: 0;
 }
 
 .main {
@@ -16,9 +17,8 @@
   margin: auto;
 }
 
-aside {
-  width: 300px;
+#change {
   margin: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  text-align: center;
+  padding: 20px 50px;
 }
