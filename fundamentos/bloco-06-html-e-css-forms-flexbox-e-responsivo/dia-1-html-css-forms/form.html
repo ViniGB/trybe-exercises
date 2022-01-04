@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Exercício 6.1</title>
+</head>
+<body>
+  <section>
+    <header id="head">
+      <h1>Formulário - Currículo</h1>
+    </header>
+  </section>
+  <main>
+    <form action="" method="get">
+      <fieldset id="fieldset1">
+        <label for="input-name">Nome:</label>
+        <input type="text" id="input-name" maxlength="40" placeholder="Digite seu nome" required>
+        <br>
+        <br>
+        <label for="input-email">E-mail:</label>
+        <input type="email" id="input-email" maxlength="50" placeholder="Digite seu e-mail" required>
+        <br>
+        <br>
+        <label for="input-cpf">CPF:</label>
+        <input type="text" id="input-cpf" maxlength="11" placeholder="Apenas números" required>
+        <br>
+        <br>
+        <label for="input-city">Cidade:</label>
+        <input type="text" id="input-city" maxlength="28" placeholder="Digite sua cidade" required>
+        <br>
+        <br>
+        <label for="input-state">Estado:</label>
+        <select name="state" id="input-state" required>
+          <option value="select">Selecione ...</option>
+        </select>
+        <br>
+        <br>
+        <input type="radio" name="residence" id="input-radio" required checked><label for="input-radio">Casa</label>
+        <input type="radio" name="residence" id="input-radio2" required><label for="input-radio2">Apartamento</label>
+      </fieldset>
+
+      <fieldset id="fieldset2">
+        <h3>Dados do seu último emprego</h3>
+        <br>
+        <br>
+        <label for="input-summary">Resumo do currículo
+          <br>
+          <textarea name="summary" id="input-summary" cols="30" rows="10" maxlength="1000" placeholder="Descreva seu currículo" required></textarea>
+        </label>
+        <br>
+        <br>
+        <label for="input-role">Cargo
+          <br>
+          <input type="text" maxlength="40" placeholder="Digite seu cargo" required>
+        </label>
+        <br>
+        <br>
+        <label for="input-description">Descrição do cargo
+          <br>
+          <input type="text" name="description" id="input-description" maxlength="500" placeholder="Descreva seu cargo" required></textarea>
+        </label>
+        <br>
+        <br>
+        <label for="input-startdate">Data de início
+          <br>
+          <input type="text" name="start" id="input-startdate" pattern="[dd/mm/aaaa]{3}" placeholder="dd/mm/aaaa" required>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
