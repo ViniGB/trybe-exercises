@@ -60,3 +60,9 @@ fieldset h3 {
   background-color: rgb(132, 212, 132);
   padding: 12px 42px;
 }
+
+.divError {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px 30px;
+}

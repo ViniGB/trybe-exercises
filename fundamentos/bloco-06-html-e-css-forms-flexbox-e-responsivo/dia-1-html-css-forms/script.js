@@ -29,117 +29,166 @@ const cpf = document.getElementById('input-cpf');
 const address = document.getElementById('input-address');
 const city = document.getElementById('input-city');
 
-function validaFieldset1(e) {
+let i = 1;
+function validaFieldset1() {
+  while (i < main.children.length) {
+    if (main.children[i].classList.contains('divError')) {
+      main.children[i].remove();
+      i += 1;
+    }
+    i = 1;
+  }
   // Name
   if (nameText.value.length > 40) {
-    alert ('Nome ultrapassa 40 caracteres');
-    e.preventDefault();
+    const divNameText = document.createElement('p');
+    divNameText.innerText = `Erro: Nome ultrapassa 40 caracteres`;
+    divNameText.className = 'divError';
+    main.appendChild(divNameText);
   }
   nameText.required = 'on';
-
+  
   // E-mail
   if (email.value.length > 50) {
-    alert ('Email ultrapassa 50 caracteres');
-    e.preventDefault();
+    const divEmail = document.createElement('p');
+    divEmail.innerText = `Erro: E-mail ultrapassa 50 caracteres`;
+    divEmail.className = 'divError';
+    main.appendChild(divEmail);
   }
   email.required = 'on';
-
+  
   // CPF
   if (cpf.value.length > 11) {
-    alert ('CPF inválido');
-    e.preventDefault();
+    const divCPF = document.createElement('p');
+    divCPF.innerText = `Erro: CPF ultrapassa 11 caracteres`;
+    divCPF.className = 'divError';
+    main.appendChild(divCPF);
   }
   cpf.required = 'on';
-
+  
   // Address
   if (address.value.length > 200) {
-    alert ('Endereço ultrapassa 200 caracteres');
-    e.preventDefault();
+    const divAddress = document.createElement('p');
+    divAddress.innerText = `Erro: Endereço ultrapassa 200 caracteres`;
+    divAddress.className = 'divError';
+    main.appendChild(divAddress);
   }
   address.required = 'on';
-
+  
   // City
   if (city.value.length > 28) {
-    alert ('Cidade ultrapassa 28 caracteres');
-    e.preventDefault();
+    const divCity = document.createElement('p');
+    divCity.innerText = `Erro: Cidade ultrapassa 28 caracteres`;
+    divCity.className = 'divError';
+    main.appendChild(divCity);
   }
   city.required = 'on';
-
+  
   // State
   if (state.value === 'select') {
-    alert ('Escolha um estado');
-    e.preventDefault();
-  }
+      alert ('Escolha um estado');
+    }
   state.required = 'on';
-
+    
   // Radio Button
   radio.required = 'on';
   radio2.required = 'on';
 }
-
+  
 const summary = document.getElementById('input-summary');
 const role = document.getElementById('input-role');
 const roleDescription = document.getElementById('input-description');
 
+let j = 1;
 function validaFieldset2(event) {
+  while (j < main.children.length) {
+    if (main.children[j].classList.contains('divError')) {
+      main.children[j].remove();
+      j += 1;
+    }
+    j = 1;
+  }
   // Summary
   if (summary.value.length > 1000) {
-    alert ('Currículo ultrapassa 1000 caracteres');
-    event.preventDefault();
+    const divSummary = document.createElement('p');
+    divSummary.innerText = `Erro: Resumo de currículo ultrapassa 1000 caracteres`;
+    divSummary.className = 'divError';
+    main.appendChild(divSummary);
   }
   summary.required = 'on';
-
+  
   // Role
   if (role.value.length > 40) {
-    alert ('Cargo ultrapassa 40 caracteres');
-    event.preventDefault();
+    const divRole = document.createElement('p');
+    divRole.innerText = `Erro: Cargo ultrapassa 40 caracteres`;
+    divRole.className = 'divError';
+    main.appendChild(divRole);
   }
   role.required = 'on';
-
+  
   // Role Description
   if (roleDescription.value.length > 500) {
-    alert ('Descrição de cargo ultrapassa 500 caracteres');
-    e.preventDefault();
+    const divRoleDescription = document.createElement('p');
+    divRoleDescription.innerText = `Erro: Descrição de cargo ultrapassa 500 caracteres`;
+    divRoleDescription.className = 'divError';
+    main.appendChild(divRoleDescription);
   }
   roleDescription.required = 'on';
-
+  
   // Start Date
   if (month.value <= 0 || month.value > 12) {
-    alert('Mês inválido');
-    event.preventDefault();
+    if (month.value !== '') {
+      const divMonth = document.createElement('p');
+      divMonth.innerText = `Erro: Mês inválido`;
+      divMonth.className = 'divError';
+      main.appendChild(divMonth);
+    }
   }
   if (year.value < 0) {
-    alert('Ano inválido');
-    event.preventDefault();
+    const divYear = document.createElement('p');
+    divYear.innerText = `Erro: Ano inválido`;
+    divYear.className = 'divError';
+    main.appendChild(divYear);
   }
   if (day.value <= 0 || day.value > 31) {
-    alert('Dia inválido');
-    event.preventDefault();
+    if (day.value !== '') {
+      const divDay = document.createElement('p');
+      divDay.innerText = `Erro: Dia inválido`;
+      divDay.className = 'divError';
+      main.appendChild(divDay);
+    }
   }
-
+  
   if (months30Days.includes(parseInt(month.value))) {
     if (day.value > 30) {
-      alert('Data inválida');
-      event.preventDefault();
+      const divDayFeb = document.createElement('p');
+      divDayFeb.innerText = `Erro: Data inválida`;
+      divDayFeb.className = 'divError';
+      main.appendChild(divDayFeb);
     }
   }
   if (parseInt(month.value) === months28Or29Days) {
     if (year.value % 4 === 0) {
       if (day.value > 29) {
-        alert('Data inválida');
-        event.preventDefault();
+        const divDayFeb = document.createElement('p');
+        divDayFeb.innerText = `Erro: Data inválida`;
+        divDayFeb.className = 'divError';
+        main.appendChild(divDayFeb);
       }
     } else {
       if (day.value > 28) {
-        alert('Data inválida');
-        event.preventDefault();
+        const divDayFeb = document.createElement('p');
+        divDayFeb.innerText = `Erro: Data inválida`;
+        divDayFeb.className = 'divError';
+        main.appendChild(divDayFeb);
       }
     }
   }
 }
 // Function for start date
 function startDateResponse(event) {
-  validaFieldset1();
+  event.preventDefault();
+  validaFieldset1(event);
   validaFieldset2(event);
 }
 submitButton.addEventListener('click', startDateResponse);
+  
