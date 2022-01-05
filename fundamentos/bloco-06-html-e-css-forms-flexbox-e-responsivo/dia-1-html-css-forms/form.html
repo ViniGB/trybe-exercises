@@ -33,13 +33,13 @@
         <br>
         <br>
         <label for="input-state">Estado:</label>
-        <select name="state" id="input-state" required>
+        <select name="state" id="input-state">
           <option value="select">Selecione ...</option>
         </select>
         <br>
         <br>
-        <input type="radio" name="residence" id="input-radio" required checked><label for="input-radio">Casa</label>
-        <input type="radio" name="residence" id="input-radio2" required><label for="input-radio2">Apartamento</label>
+        <input type="radio" name="residence" id="input-radio" checked><label for="input-radio">Casa</label>
+        <input type="radio" name="residence" id="input-radio2"><label for="input-radio2">Apartamento</label>
       </fieldset>
 
       <fieldset id="fieldset2">
@@ -66,7 +66,10 @@
         <br>
         <label for="input-startdate">Data de início
           <br>
-          <input type="text" name="start" id="input-startdate" pattern="[dd/mm/aaaa]{3}" placeholder="dd/mm/aaaa" required>
+          <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern -->
+          <input type="text" name="day" id="input-startdate" pattern="[0-9]{1,2}" placeholder="dd" size="1" maxlength="2" required> /
+          <input type="text" name="month" id="input-startmonth" pattern="[0-9]{1,2}" placeholder="mm" size="1" maxlength="2" required> /
+          <input type="text" name="year" id="input-startyear" pattern="[0-9]{4}" placeholder="aaaa" size="2" maxlength="4" required>
         </label>
       </fieldset>
 

@@ -42,9 +42,9 @@ fieldset h3 {
   resize: none;
 }
 
-#fieldset2 input {
+/* #fieldset2 input {
   width: 40%;
-}
+} */
 
 #submit {
   padding: 10px 40px;
