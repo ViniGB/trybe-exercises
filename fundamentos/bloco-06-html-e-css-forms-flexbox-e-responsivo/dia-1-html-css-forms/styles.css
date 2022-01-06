@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin: 50px 100px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 30px 12px;
+  border-radius: 10px;
+}
+
+fieldset h3 {
+  margin: 0;
+  text-align: center;
+}
+
+#fieldset1 label {
+  width: 70px;
+  display: inline-block;
+}
+
+#head {
+  background-color: rgb(72, 168, 72);
+  margin-bottom: 20px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+#head h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding: 30px;
+}
+
+#fieldset2 textarea {
+  width: 90%;
+  resize: none;
+}
+
+/* #fieldset2 input {
+  width: 40%;
+} */
+
+#submit {
+  padding: 10px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px;
+  background-color: rgb(72, 168, 72);
+  font-size: 15px;
+  color: white;
+  transition: 1s;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+#submit:hover {
+  background-color: rgb(132, 212, 132);
+  padding: 12px 42px;
+}
+
+#clear-button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px;
+  background-color: rgb(230, 66, 38);
+  font-size: 15px;
+  color: white;
+  transition: 1s;
+  margin-bottom: 30px;
+}
+
+#clear-button:hover {
+  background-color: rgb(243, 110, 86);
+  padding: 12px 42px;
+}
+
+.divError {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+.divError2 {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
