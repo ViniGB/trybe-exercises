@@ -55,10 +55,27 @@ fieldset h3 {
   color: white;
   transition: 1s;
   margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 #submit:hover {
   background-color: rgb(132, 212, 132);
+  padding: 12px 42px;
+}
+
+#clear-button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px;
+  background-color: rgb(230, 66, 38);
+  font-size: 15px;
+  color: white;
+  transition: 1s;
+  margin-bottom: 30px;
+}
+
+#clear-button:hover {
+  background-color: rgb(243, 110, 86);
   padding: 12px 42px;
 }
 

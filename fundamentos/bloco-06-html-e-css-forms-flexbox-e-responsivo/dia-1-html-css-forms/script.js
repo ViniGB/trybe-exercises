@@ -218,7 +218,7 @@ function validaFieldset2(event) {
 }
 
 // Function for start date
-// let i = 1;
+let i = 1;
 let k = 0;
 function startDateResponse(event) {
   // checks validity of form being filled or not. If filled, it'll preventDefault. Taken from https://stackoverflow.com/questions/27348036/prevent-form-submit-but-retain-form-validation
@@ -230,14 +230,14 @@ function startDateResponse(event) {
   }
 
   // condition to delete previous Error divs, in order to add new
-  // while (i < main.children.length) {
-  for (let i = 1; i < main.children.length; i += 1) {
+  while (i < main.children.length) {
+  // for (let i = 1; i < main.children.length; i += 1) {
     if (main.children[i].classList.contains('divError')) {
       main.children[i].remove();
-      // i += 1;
+      i += 1;
     }
+    i = 1;
   }
-  // i = 1;
 
   // condition to delete previous div paragraphs, in order to add new
   while (k < divAll.children.length) {
@@ -256,4 +256,19 @@ function startDateResponse(event) {
   }
 }
 submitButton.addEventListener('click', startDateResponse);
+
+// Function to clear form data and created divs
+const clearButton = document.getElementById('clear-button');
+
+j = 1
+function clearAll() {
+  while (j < main.children.length) {
+    if (main.children[j].classList.contains('divError')) {
+      main.children[j].remove();
+      j += 1;
+    }
+  }
+  j = 1;
+}
+clearButton.addEventListener('click', clearAll);
   
