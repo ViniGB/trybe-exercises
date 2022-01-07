@@ -17,9 +17,12 @@ fieldset h3 {
   text-align: center;
 }
 
-#fieldset1 label {
-  width: 70px;
-  display: inline-block;
+#fieldset1 label, #fieldset2 label {
+  font-weight: 900;
+}
+
+.radio label {
+  font-weight: normal;
 }
 
 #head {
@@ -38,13 +41,9 @@ fieldset h3 {
 }
 
 #fieldset2 textarea {
-  width: 90%;
+  width: 100%;
   resize: none;
 }
-
-/* #fieldset2 input {
-  width: 40%;
-} */
 
 #submit {
   padding: 10px 40px;
