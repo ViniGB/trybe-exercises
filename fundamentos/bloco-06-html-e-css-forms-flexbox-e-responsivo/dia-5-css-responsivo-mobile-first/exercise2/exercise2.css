@@ -54,7 +54,9 @@ img {
     font-size: 12px;
   }
 
-  .chapters {
+  .aside-one {
+    display: flex;
+    flex-direction: column;
     min-width: 240px;
   }
 
@@ -120,6 +122,7 @@ img {
 
   .chapters {
     font-size: x-large;
+    min-width: 350px;
   }
 
   .main-content {
@@ -130,6 +133,75 @@ img {
 
   .main-content p {
     max-width: 900px;
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    margin: 100px;
+    background-color: #017F06;
+    color: white;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header p {
+    color: #260149;
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  nav li {
+    margin-right: 20px;
+    font-size: 22px;
+  }
+
+  nav li:nth-of-type(3) {
+    margin-right: 0;
+  }
+
+  .aside-two h2 {
+    font-size: 40px;
+  }
+
+  .aside-two li {
+    font-size: 25px;
+  }
+
+  .aside-one h2 {
+    font-size: 60px;
+  }
+
+  .chapters {
+    font-size: xx-large;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content h1 {
+    font-size: 40px;
+  }
+
+  .main-content p {
+    max-width: 1420px;
+    font-size: xx-large;
+  }
+
+  footer {
     font-size: x-large;
   }
 }
