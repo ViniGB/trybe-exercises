@@ -1,0 +1,86 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* 1 - Faça o tamanho da fonte ser maior; */
+  font-size: x-large;
+  /* 4 - Adicione um pouco de margin na página. */
+  margin: 50px;
+  /* 8 - Crie uma nova media query no seu arquivo CSS usando a dimensão que você encontrou para telas grandes (por exemplo 1300px) , e realize os seguintes ajustes dentro do breakpoint : 
+    -Adicione a propriedade max-width à página, para garantir que a largura das linhas não fique muito grande. */
+  max-width: 1500px;
+}
+
+article {
+
+}
+
+h1 {
+  /* 2 - Faça o tamanho da fonte dos elementos h1 ser menor; */
+  font-size: xx-large;
+}
+
+h2 {
+
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+
+}
+
+section {
+
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: .8em;
+  /* 3 - Aumente o espaçamento entre as figuras; */
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    /* 6 - Crie uma media query no seu arquivo CSS , usando a dimensão em pixels que você guardou como o min-width do teste da media query . Dentro desse breakpoint , adicione os seguintes ajustes:
+      -Altere a cor de fundo (isso vai te ajudar a perceber quando a media query teve efeito) ;
+      -Ajuste o tamanho da fonte;
+      -Ajuste as margens da página; */
+    background-color: grey;
+    font-size: larger;
+    margin: 20px;
+  }
+
+  #figure-section {
+    /* 6 - Crie uma media query no seu arquivo CSS , usando a dimensão em pixels que você guardou como o min-width do teste da media query . Dentro desse breakpoint , adicione os seguintes ajustes:
+      -Faça as imagens serem mostradas em duas colunas. */
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    /* 8 - Crie uma nova media query no seu arquivo CSS usando a dimensão que você encontrou para telas grandes (por exemplo 1300px) , e realize os seguintes ajustes dentro do breakpoint :
+      -Altere a cor de fundo;
+      -Ajuste o tamanho da fonte;
+      -Ajuste as margens da página; */
+    background-color: aqua;
+    font-size: xx-large;
+    margin: 100px;
+  }
+}
