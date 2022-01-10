@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  text-align: justify;
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.aside-one {
+  margin: 100px;
+}
+
+.aside-one h2 {
+  text-align: center;
+}
+
+.chapters {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 50px;
+    background-color: rgb(163, 133, 142);
+  }
+
+  header {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  header p {
+    color: gold;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  nav li {
+    font-size: 12px;
+  }
+
+  .chapters {
+    min-width: 240px;
+  }
+
+  .main-content h1 {
+    font-size: 20px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+  }
+}
