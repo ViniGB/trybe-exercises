@@ -5,8 +5,7 @@ const arrays = [
 ];
 
 function flatten() {
-  const flattenedMatrix = arrays.reduce((acc, curr) => acc.concat(curr),[]);
-  return flattenedMatrix;
+  return arrays.reduce((acc, curr) => acc.concat(curr),[]);
 }
 
 console.log(flatten());
